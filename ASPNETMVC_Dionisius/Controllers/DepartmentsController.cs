@@ -58,16 +58,18 @@ namespace ASPNETMVC_Dionisius.Controllers
             }
             return View(department);
         }
-        [HttpPost, ActionName("Edit")]
+        [HttpPost] [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, Department department)
         {
-            if (ModelState.IsValid)
+            Department updateDepartment = myContext.Departments.Where(a => a.Id == id).FirstOrDefault();
+
+            if (updateDepartment != null)
             {
-                myContext.Entry(department).State = EntityState.Modified;
+                updateDepartment.Name = department.Name;
                 myContext.SaveChanges();
                 return RedirectToAction("index");
             }
-            return View(department);
+            else return View();
         }
 
         public ActionResult Delete(int? id)
@@ -83,13 +85,18 @@ namespace ASPNETMVC_Dionisius.Controllers
             }
             return View(department);
         }
-        [HttpPost, ActionName("Delete")]
+        [HttpPost][ValidateAntiForgeryToken]
         public ActionResult Delete(int id)
         {
-            Department department = myContext.Departments.Find(id);
-            myContext.Departments.Remove(department);
-            myContext.SaveChanges();
-            return RedirectToAction("index");
+
+            Department deleteDepartment = myContext.Departments.Where(x => x.Id == id).FirstOrDefault();
+            if (deleteDepartment != null)
+            {
+                myContext.Departments.Remove(deleteDepartment);
+                myContext.SaveChanges();
+                return RedirectToAction("index");
+            }
+            else return View();
         }
     }
 }
