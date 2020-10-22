@@ -19,9 +19,18 @@ namespace ASPNETMVC_Dionisius.Controllers
             return View(myContext.Departments.ToList());
         }
 
-        public ActionResult Details(int id)
+        public ActionResult Details(int? id)
         {
-            return View(myContext.Departments.Find(id));
+            if(id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Department department = myContext.Departments.Find(id);
+            if(department == null)
+            {
+                return HttpNotFound();
+            }
+            return View(department);
         }
         
         public ActionResult Create()
@@ -49,7 +58,7 @@ namespace ASPNETMVC_Dionisius.Controllers
             }
             return View(department);
         }
-        [HttpPost]
+        [HttpPost, ActionName("Edit")]
         public ActionResult Edit(int id, Department department)
         {
             if (ModelState.IsValid)
