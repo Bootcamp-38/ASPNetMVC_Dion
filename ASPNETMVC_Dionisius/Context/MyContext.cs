@@ -12,5 +12,6 @@ namespace ASPNETMVC_Dionisius.Context
     {
         public MyContext() : base("ASPNETMVC_Dionisius") { }
         public DbSet<Department> Departments { get; set; }
+        public DbSet<Division> Divisions { get; set; }
     }
 }

@@ -14,6 +14,6 @@ namespace ASPNETMVC_Dionisius.Models
         public int Id { get; set; }
         public string Name { get; set; }
 
-
+        public ICollection<Division> Divisions { get; set; }
     }
 }

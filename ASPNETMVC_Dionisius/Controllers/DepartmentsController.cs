@@ -70,6 +70,14 @@ namespace ASPNETMVC_Dionisius.Controllers
                 return RedirectToAction("index");
             }
             else return View();
+
+            //if (ModelState.IsValid)
+            //{
+            //    myContext.Entry(department).State = EntityState.Modified;
+            //    myContext.SaveChanges();
+            //    return RedirectToAction("Index");
+            //}
+            //return View(department);
         }
 
         public ActionResult Delete(int? id)

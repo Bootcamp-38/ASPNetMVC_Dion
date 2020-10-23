@@ -162,9 +162,11 @@ D:\Github\ASPNetMVC_Dion\ASPNETMVC_Dionisius\bin\Newtonsoft.Json.xml
 D:\Github\ASPNetMVC_Dion\ASPNETMVC_Dionisius\bin\Antlr3.Runtime.pdb
 D:\Github\ASPNetMVC_Dion\ASPNETMVC_Dionisius\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Github\ASPNetMVC_Dion\ASPNETMVC_Dionisius\obj\Debug\ASPNETMVC_Dionisius.csprojAssemblyReference.cache
-D:\Github\ASPNetMVC_Dion\ASPNETMVC_Dionisius\obj\Debug\ASPNETMVC_Dionisius.Migrations.addDepartmentTable.resources
-D:\Github\ASPNetMVC_Dion\ASPNETMVC_Dionisius\obj\Debug\ASPNETMVC_Dionisius.csproj.GenerateResource.cache
 D:\Github\ASPNetMVC_Dion\ASPNETMVC_Dionisius\obj\Debug\ASPNETMVC_Dionisius.csproj.CoreCompileInputs.cache
 D:\Github\ASPNetMVC_Dion\ASPNETMVC_Dionisius\obj\Debug\ASPNETMVC_Dionisius.csproj.CopyComplete
 D:\Github\ASPNetMVC_Dion\ASPNETMVC_Dionisius\obj\Debug\ASPNETMVC_Dionisius.dll
 D:\Github\ASPNetMVC_Dion\ASPNETMVC_Dionisius\obj\Debug\ASPNETMVC_Dionisius.pdb
+D:\Github\ASPNetMVC_Dion\ASPNETMVC_Dionisius\obj\Debug\ASPNETMVC_Dionisius.Migrations.tableNew.resources
+D:\Github\ASPNetMVC_Dion\ASPNETMVC_Dionisius\obj\Debug\ASPNETMVC_Dionisius.csproj.GenerateResource.cache
+D:\Github\ASPNetMVC_Dion\ASPNETMVC_Dionisius\obj\Debug\ASPNETMVC_Dionisius.Migrations.updateTable.resources
+D:\Github\ASPNetMVC_Dion\ASPNETMVC_Dionisius\obj\Debug\ASPNETMVC_Dionisius.Migrations.updateTableNew.resources

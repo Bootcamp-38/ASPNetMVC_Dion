@@ -129,19 +129,30 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\MyContext.cs" />
     <Compile Include="Controllers\DepartmentsController.cs" />
+    <Compile Include="Controllers\DivisionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202010220749521_addDepartmentTable.cs" />
-    <Compile Include="Migrations\202010220749521_addDepartmentTable.designer.cs">
-      <DependentUpon>202010220749521_addDepartmentTable.cs</DependentUpon>
+    <Compile Include="Migrations\202010230231557_tableNew.cs" />
+    <Compile Include="Migrations\202010230231557_tableNew.designer.cs">
+      <DependentUpon>202010230231557_tableNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010230340117_updateTable.cs" />
+    <Compile Include="Migrations\202010230340117_updateTable.designer.cs">
+      <DependentUpon>202010230340117_updateTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010230402300_updateTableNew.cs" />
+    <Compile Include="Migrations\202010230402300_updateTableNew.designer.cs">
+      <DependentUpon>202010230402300_updateTableNew.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Department.cs" />
+    <Compile Include="Models\Division.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-lumen.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -182,6 +193,9 @@
     <Content Include="Views\Departments\Create.cshtml" />
     <Content Include="Views\Departments\Edit.cshtml" />
     <Content Include="Views\Departments\Delete.cshtml" />
+    <Content Include="Views\Division\Index.cshtml" />
+    <Content Include="Views\Division\Details.cshtml" />
+    <Content Include="Views\Division\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -200,8 +214,14 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202010220749521_addDepartmentTable.resx">
-      <DependentUpon>202010220749521_addDepartmentTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202010230231557_tableNew.resx">
+      <DependentUpon>202010230231557_tableNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010230340117_updateTable.resx">
+      <DependentUpon>202010230340117_updateTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010230402300_updateTableNew.resx">
+      <DependentUpon>202010230402300_updateTableNew.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
